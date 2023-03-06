@@ -7,8 +7,8 @@ export const configMuiTypography: TypographyOptions = {
   h2: { fontSize: 26, color: appColor.primary, fontFamily: "Jua" },
   body1: {
     fontSize: 16,
-    letterSpacing: "2px",
+    letterSpacing: "1px",
   },
   body2: { fontSize: 16, fontWeight: 500 },
-  button: { fontFamily: "Jua", fontSize: 26, letterSpacing: "2px" },
+  button: { fontSize: 16, letterSpacing: "1px", color: appColor.white },
 };
