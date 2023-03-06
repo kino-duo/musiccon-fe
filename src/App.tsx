@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { MuiThemeProvider } from "./providers";
-import { MyRoutes } from "./pages/MyRoutes";
+import { AppRoutes } from "./pages/AppRoutes";
 
 export const App = () => {
   return (
     <Router>
       <MuiThemeProvider>
-        <MyRoutes />
+        <AppRoutes />
       </MuiThemeProvider>
     </Router>
   );
