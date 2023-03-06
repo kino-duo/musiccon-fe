@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { MuiThemeProvider } from "./providers";
+import { MuiThemeProvider } from "./hocs/MuiThemeProvider";
 import { AppRoutes } from "./pages/AppRoutes";
 
 export const App = () => {
