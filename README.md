@@ -9,6 +9,7 @@
 - yarn
 - MUI
 - Atomic pattern
+- react-hook-form
 
 ### 개발 모드 빌드
 
