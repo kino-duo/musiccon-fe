@@ -1,11 +1,14 @@
 ### musiccon fe입니다
 
-### 명세
+## 명세
+
+### 스택
 
 - TS
 - React
 - yarn
 - MUI
+- Atomic pattern
 
 ### 개발 모드 빌드
 
