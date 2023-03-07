@@ -1,11 +1,13 @@
 import React from "react";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
 import { Menu } from "../molecules";
 import { appColor } from "../constants/appColor";
 import { breakPoints } from "../constants/breakPoints";
+import { useNavigate } from "react-router-dom";
 
 export const MainHeader = () => {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -28,7 +30,9 @@ export const MainHeader = () => {
           maxWidth: breakPoints.lg,
         }}
       >
-        <Typography>Musiccon</Typography>
+        <Button color="inherit" onClick={() => navigate("/")}>
+          Musiccon
+        </Button>
 
         <Menu />
       </Toolbar>
