@@ -3,12 +3,21 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { MuiThemeProvider } from "./hocs/MuiThemeProvider";
 import { AppRoutes } from "./pages/AppRoutes";
 
+// Global Component
+import { MainHeader } from "./components/organisms/MainHeader";
+import { MainContainer } from "./components/containers/MainContainer";
+
 export const App = () => {
   return (
-    <Router>
-      <MuiThemeProvider>
-        <AppRoutes />
-      </MuiThemeProvider>
-    </Router>
+    <>
+      <MainHeader />
+      <Router>
+        <MuiThemeProvider>
+          <MainContainer>
+            <AppRoutes />
+          </MainContainer>
+        </MuiThemeProvider>
+      </Router>
+    </>
   );
 };

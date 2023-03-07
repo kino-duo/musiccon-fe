@@ -9,9 +9,12 @@ export const MainHeader = () => {
   return (
     <div
       style={{
+        position: "fixed",
+        width: "100%",
         display: "flex",
         justifyContent: "center",
         backgroundColor: appColor.black,
+        opacity: 0.9,
       }}
     >
       <Toolbar
