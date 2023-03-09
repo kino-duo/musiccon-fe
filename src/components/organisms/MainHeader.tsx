@@ -33,7 +33,7 @@ export const MainHeader = () => {
             maxWidth: breakPoints.lg,
           }}
         >
-          <ButtonSmall>Musiccon</ButtonSmall>
+          <ButtonSmall onClick={() => navigate("/")}>Musiccon</ButtonSmall>
 
           <Menu />
         </Toolbar>

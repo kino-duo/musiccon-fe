@@ -8,5 +8,5 @@ type Props = {
  * @param height
  */
 export const Empty = styled.div<Props>((props) => ({
-  height: `${props.height}`,
+  height: props.height,
 }));

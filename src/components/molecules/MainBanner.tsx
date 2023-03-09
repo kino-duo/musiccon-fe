@@ -6,9 +6,10 @@ import { sizes } from "../constants/sizes";
 // [Todo] MainBanner 구현하기
 export const MainBanner = () => {
   return (
-    // <div style={{ height: sizes.fullHeightWithoutHeader, display: "flex", alignItems: "center" }}>
-    <div style={{ height: "100vh - 48", display: "flex", alignItems: "center" }}>
-      <img src={testDog1} style={{ height: "100%" }} />
+    <div
+      style={{ height: sizes.fullHeightWithoutHeader - 100, display: "flex", alignItems: "center" }}
+    >
+      <img src={testDog1} style={{ maxWidth: "680px", width: "80%" }} />
       <Typography sx={{ fontSize: 40 }}> &nbsp; 배너 부분입니다.</Typography>
     </div>
   );
