@@ -4,5 +4,5 @@ import Button from "@mui/material/Button";
 
 export const ButtonSmall = styled(Button)({
   color: "inherit",
-  fontSize: 16,
+  fontSize: 14,
 });
