@@ -3,8 +3,8 @@ import { appColor } from "./appColor";
 
 export const configTypography: TypographyOptions = {
   fontFamily: ["SpoqaHanSansNeo-Regular", "sans-serif"].join(","),
-  h1: { fontSize: 80, color: appColor.primary, fontFamily: "Jua" },
-  h2: { fontSize: 26, color: appColor.primary, fontFamily: "Jua" },
+  h1: { fontSize: 36, fontWeight: 700 },
+  h2: { fontSize: 26 },
   body1: {
     fontSize: 18,
     letterSpacing: "1px",
