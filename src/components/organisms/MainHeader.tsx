@@ -1,11 +1,12 @@
 import React from "react";
 import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
+import { ButtonSmall } from "../atoms/ButtonSmall";
 import { Menu } from "../molecules";
 import { appColor } from "../constants/appColor";
 import { breakPoints } from "../constants/breakPoints";
 import { useNavigate } from "react-router-dom";
 import { Empty } from "../atoms";
+import { sizes } from "../constants/sizes";
 
 export const MainHeader = () => {
   const navigate = useNavigate();
@@ -32,14 +33,12 @@ export const MainHeader = () => {
             maxWidth: breakPoints.lg,
           }}
         >
-          <Button color="inherit" onClick={() => navigate("/")}>
-            Musiccon
-          </Button>
+          <ButtonSmall>Musiccon</ButtonSmall>
 
           <Menu />
         </Toolbar>
       </div>
-      <Empty height="3rem" />
+      <Empty height={`${sizes.heightHeader}px`} />
     </>
   );
 };
