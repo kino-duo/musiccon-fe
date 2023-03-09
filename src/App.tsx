@@ -10,8 +10,8 @@ import { MainContainer } from "./components/containers/MainContainer";
 export const App = () => {
   return (
     <>
-      <MainHeader />
       <Router>
+        <MainHeader />
         <MuiThemeProvider>
           <MainContainer>
             <AppRoutes />

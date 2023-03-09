@@ -1,7 +1,7 @@
 // [Todo] 명세에 따라 수정 필요
 const originColor = {
   grey1: "#F2F2F2",
-  grey2: "#434242",
+  grey2: "#c8c8c8",
   grey3: "#333333",
   grey4: "#222222",
   white: "#FFFFFF",
