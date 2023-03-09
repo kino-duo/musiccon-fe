@@ -4,6 +4,12 @@ import { getChildrenByName } from "../../lib/util/getChildrenByName";
 import { isEmpty } from "../../lib/util/isEmpty";
 import { Empty } from "../atoms";
 
+const Layout = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+});
+
 type Props = { children: React.ReactNode };
 
 const Main = ({ children }: Props) => {
@@ -11,20 +17,19 @@ const Main = ({ children }: Props) => {
   const arrayBodyComponenets = getChildrenByName(children, "Body");
 
   return (
-    <>
+    <Layout>
       <Empty height="2rem" />
       {!!TitleComponenets && TitleComponenets}
       <Empty height="2rem" />
       {isEmpty(arrayBodyComponenets) || arrayBodyComponenets}
-    </>
+    </Layout>
   );
 };
 
 const Title = ({ children }: Props) => {
-  return <div style={{ display: "flex", justifyContent: "center" }}>{children}</div>;
+  return <>{children}</>;
 };
 
-// [Todo] Body 부분을 없앨 수 있지 않을까?
 const Body = ({ children }: Props) => {
   return <>{children}</>;
 };
