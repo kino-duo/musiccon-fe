@@ -8,9 +8,9 @@ import { IdField, SaveIdCheckBox } from "./components";
 import { ButtonCTA, ButtonSmall } from "../../../components/atoms";
 import { PwField } from "./components/PwField";
 
+// [Error] Vercel의 배포 시점에 페이지가 렌더링이 안됨
 export const SignIn = () => {
   const { reg, onSubmit, setValue, toggleSaveId, navigate } = useSignIn();
-
   return (
     <PageLayout>
       <PageLayout.Title>
@@ -25,9 +25,7 @@ export const SignIn = () => {
           <Empty height="2rem" />
           <ButtonCTA type="submit">로그인</ButtonCTA>
         </FormLayout>
-
         <Empty height="2rem" />
-
         <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={2}>
           <ButtonSmall>아이디 찾기</ButtonSmall>
           <ButtonSmall>비밀번호 찾기</ButtonSmall>
